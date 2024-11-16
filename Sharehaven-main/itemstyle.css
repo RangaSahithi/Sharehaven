@@ -1,0 +1,66 @@
+/* Base styles for the flex-box */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles for the left side */
+.left {
+    flex: 1; /* Adjust the flex value as needed */
+}
+
+/* Styles for the big image */
+.big-img {
+    max-width: 100%;
+}
+
+/* Styles for the right side */
+.right {
+    flex: 1; /* Adjust the flex value as needed */
+    padding: 20px;
+}
+
+/* Styles for the price */
+.price {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styles for the contact number */
+.Contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Contact img {
+    margin-right: 5px;
+}
+
+/* Styles for the button box */
+.btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styles for the buttons */
+.cart-btn, .buy-btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .flex-box {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}

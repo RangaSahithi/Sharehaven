@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+
+  <!-- Login & Registration Section -->
+  <div class="container" id="auth-section">
+    <!-- Navigation Pills -->
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="login-tab" onclick="showLogin()" href="#">Login</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="register-tab" onclick="showRegister()" href="#">Register</a>
+      </li>
+    </ul>
+
+    <!-- Login Form -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <form onsubmit="return loginUser(event)">
+        <div class="form-group">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required>
+        </div>
+        <button type="submit" ><a href="index.html"></a>Login</button>
+      </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-form" class="hidden">
+      <h2>Register</h2>
+      <form onsubmit="return registerUser(event)">
+        <div class="form-group">
+          <label for="register-name">Full Name</label>
+          <input type="text" id="register-name" required>
+        </div>
+        <div class="form-group">
+          <label for="register-username">Username</label>
+          <input type="text" id="register-username" required>
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dashboard Section (Hidden by default) -->
+  <div class="container hidden" id="dashboard">
+    <h2>Welcome to the Dashboard</h2>
+    <p id="welcome-message"></p>
+    <button onclick="logoutUser()">Logout</button>
+  </div>
+
+  <script src="loginscript.js"></script>
+</body>
+</html>

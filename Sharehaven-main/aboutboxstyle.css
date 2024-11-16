@@ -1,0 +1,151 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+}
+
+
+/* All Title Box */
+.all-title-box {
+    background: url('images/about-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.all-title-box h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.breadcrumb {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.breadcrumb-item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #ffd700;
+}
+
+/* About Box Main */
+.about-box-main {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.about-box-main h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-box-main p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.banner-frame img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Services Section */
+.service-block-inner {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-block-inner h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service-block-inner p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-block-inner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.hover-team {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hover-team:hover {
+    transform: translateY(-10px);
+}
+
+.our-team img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.team-content {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+.team-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.team-content .post {
+    color: #ffd700;
+}
+
+.social li a {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social li a:hover {
+    background-color: #ffd700;
+}
+
+.team-description {
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+}

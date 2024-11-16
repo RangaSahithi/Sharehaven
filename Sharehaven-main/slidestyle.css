@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center; /* Center the slides horizontally */
+  align-items: center; /* Center the slides vertically */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px; /* Set the height of the slider */
+}
+
+.slide {
+  flex: 0 0 auto; /* Prevent the slides from growing */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .slide {
+    display: block;
+    float: left;
+    width: 33.33%;
+  }
+}
